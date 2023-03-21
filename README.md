@@ -1,5 +1,7 @@
 # Passworst (formerly passrust): The Worst Password Manager
 
+## [Download](https://github.com/fr000gs/passrust/releases)
+
 ## Usage
 
 1. Enter your username in top field (along with the website name)
