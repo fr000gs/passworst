@@ -1,5 +1,18 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")] // hide console window on Windows in release
+/*
+#[cfg(target_arch = "wasm32")]
+use wasm_bindgen::prelude::*;
 
+/// Call this once from the HTML.
+#[cfg(target_arch = "wasm32")]
+#[wasm_bindgen]
+pub async fn start(canvas_id: &str) -> Result<AppRunnerRef, eframe::wasm_bindgen::JsValue> {
+    let web_options = eframe::WebOptions::default();
+    eframe::start_web(canvas_id, web_options, Box::new(|cc| Box::new(MyEguiApp::new(cc)))).await
+}
+*/
+//#[cfg(target_os = "android")]
+//#[no_mangle]
 extern crate sha2;
 extern crate base16ct;
 
@@ -90,6 +103,7 @@ impl eframe::App for Pswd {
             });
             if ui.button("Copy hash").clicked() {
                 ui.output_mut(|o| o.copied_text = self.hash.clone());
+                println!("{:?}", self.hash.clone());
             }
         });
     }
