@@ -103,7 +103,6 @@ impl eframe::App for Pswd {
             });
             if ui.button("Copy hash").clicked() {
                 ui.output_mut(|o| o.copied_text = self.hash.clone());
-                println!("{:?}", self.hash.clone());
             }
         });
     }
