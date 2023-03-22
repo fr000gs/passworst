@@ -1,6 +1,8 @@
 # Passworst (formerly passrust): The Worst Password Manager
 
-## [Download](https://github.com/fr000gs/passrust/releases)
+## [Download](releases)
+
+Forget to forgot password [^1]
 
 ## Usage
 
@@ -18,6 +20,17 @@
 1. You no longer have to click the "forgot password" button
 2. You don't have to carry around a file unlike other password managers
 
+#### Copyright (C) 2023 fr000gs
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the [GNU General Public License](https://www.gnu.org/licenses/gpl.html)
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
 #### Credits: 
 1. [Vim](www.vim.org) on [Arch](archlinux.org) with [YCM](https://github.com/ycm-core/YouCompleteMe)
-2. [Forgot password?](https://github.com/fr000gs/passrust/releases)
+
+[^1]: [Forgot password?](releases)
