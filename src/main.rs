@@ -42,8 +42,8 @@ fn main() -> Result<(), eframe::Error> {
     //tracing_subscriber::fmt::init();
 
     let options = eframe::NativeOptions {
-        initial_window_size: Some(egui::vec2(420.0, 420.0)),
-        min_window_size: Some(egui::vec2(420.0, 240.0)),
+        initial_window_size: Some(egui::vec2(525.0, 525.0)),
+        min_window_size: Some(egui::vec2(525.0, 300.0)),
         ..Default::default()
     };
     eframe::run_native(
@@ -60,6 +60,7 @@ struct Pswd {
     display_user: bool,
     display_pswd: bool,
     display_hash: bool,
+    eye: String,
 }
 
 impl Default for Pswd {
@@ -71,6 +72,7 @@ impl Default for Pswd {
             display_user: false,
             display_pswd: false,
             display_hash: false,
+            eye: String::from("👁".replace("\u{fe0f}", "")),
         }
     }
 }
@@ -78,20 +80,21 @@ impl Default for Pswd {
 impl eframe::App for Pswd {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
         egui::CentralPanel::default().show(ctx, |ui| {
+            ctx.set_pixels_per_point(1.25);
             ui.heading("Password Manager");
             ui.horizontal(|ui| {
                 let name_label = ui.label("Username: ");
                 ui.add(egui::TextEdit::singleline(&mut self.user)
                     .password(!self.display_user))
                     .labelled_by(name_label.id);
-                ui.toggle_value(&mut self.display_user, "👁️");
+                ui.toggle_value(&mut self.display_user, self.eye.clone());
             });
             ui.horizontal(|ui| {
                 let pass_label = ui.label("Password: ");
                 ui.add(egui::TextEdit::singleline(&mut self.pswd)
                     .password(!self.display_pswd))
                     .labelled_by(pass_label.id);                 
-                ui.toggle_value(&mut self.display_pswd, "👁️");
+                ui.toggle_value(&mut self.display_pswd, self.eye.clone());
             });
             ui.horizontal(|ui| {
                 let hash_label = ui.label("Hash: ");
@@ -99,10 +102,10 @@ impl eframe::App for Pswd {
                 ui.add(egui::TextEdit::singleline(&mut self.hash)
                     .password(!self.display_hash))
                     .labelled_by(hash_label.id);                 
-                ui.toggle_value(&mut self.display_hash, "👁️");
+                ui.toggle_value(&mut self.display_hash, self.eye.clone());
             });
             if ui.button("Copy hash").clicked() {
-                ui.output_mut(|o| o.copied_text = self.hash.clone());
+                ui.output_mut(|o| o.copied_text = self.hash.clone().to_string());
             }
         });
     }
