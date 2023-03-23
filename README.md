@@ -1,4 +1,4 @@
-# Passworst (formerly passrust): The Worst Password Manager
+# Passworst: The Worst Password Manager
 
 ## [Download](releases)
 
