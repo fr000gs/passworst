@@ -3,6 +3,7 @@ layout: page
 title: Passworst
 subtitle: The Worst Password Manager
 description: A password manager which requires no files
+toc: true
 ---
 ## [Download for Windows x64](https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe)
 
