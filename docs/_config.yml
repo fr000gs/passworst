@@ -2,3 +2,11 @@ remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
 - jekyll-remote-theme
 show_downloads: false
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "pages"
+      toc: true
+      
