@@ -1,9 +1,9 @@
 ---
 layout: page
 title: "Passworst: the Worst Password Manager"
-subtitle: Forget to <button>Forgot Password</button>
+subtitle: Forget to <button><h2>Forgot Password</h2></button>
 description: A password manager which requires no files
-menubar_toc: true
+toc: true
 ---
 ## Download
 1. [Download for Windows x64](https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe)
