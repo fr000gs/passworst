@@ -1,8 +1,8 @@
 # Passworst: The Worst Password Manager
 
-## [Download for Windows x64](releases/latest/download/passrust.exe)
+## [Download for Windows x64](https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe)
 
-## [Standalone binary for Linux](releases/latest/download/passrust)
+## [Standalone binary for Linux](https://github.com/fr000gs/passworst/releases/latest/download/passrust)
 
 Forget to forgot password [^1]
 
