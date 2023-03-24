@@ -1,15 +1,14 @@
 ---
 layout: page
-title: Passworst
-subtitle: The Worst Password Manager
+title: "Passworst: the Worst Password Manager"
+subtitle: Forget to <button>Forgot Password</button>
 description: A password manager which requires no files
-toc: true
+menubar_toc: true
 ---
-## [Download for Windows x64](https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe)
-
-## [Standalone binary for Linux](https://github.com/fr000gs/passworst/releases/latest/download/passrust)
-
-Forget to forgot password [^1]
+## Download
+1. [Download for Windows x64](https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe)
+2. [Standalone binary for Linux](https://github.com/fr000gs/passworst/releases/latest/download/passrust)
+3. [All releases](releases)
 
 ## Usage
 
@@ -39,5 +38,3 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 #### Credits: 
 1. [Vim](www.vim.org) on [Arch](archlinux.org) with [YCM](https://github.com/ycm-core/YouCompleteMe)
-
-[^1]: [Forgot password?](releases)
