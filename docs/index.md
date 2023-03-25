@@ -9,7 +9,7 @@ comments: true
 ## Download
 1. [Download for Windows x64](https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe)
 2. [Standalone binary for Linux](https://github.com/fr000gs/passworst/releases/latest/download/passrust)
-3. [All releases](releases)
+3. <sup><sub>[All releases](https://github.com/fr000gs/passworst/releases)</sub></sup>
 
 ## Usage
 
