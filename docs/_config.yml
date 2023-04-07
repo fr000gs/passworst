@@ -1,7 +1,7 @@
-remote_theme: jekyll-material-theme/jekyll-material-theme
+remote_theme: jameshamann/jekyll-material-theme
 plugins:
 - jekyll-remote-theme
-show_downloads: false
+#show_downloads: false
 title: PassWorst
 name: fr000gs
 email: f47fr0g@gmail.com
@@ -22,11 +22,11 @@ syntax_highlighting: true # include the css for syntax highlighting
 
 display_footer: none  #change this to 'none' if you want to hide the footer copyright text
 
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "pages"
-      toc: true
+#defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#    values:
+#      layout: "pages"
+#      toc: true
       
