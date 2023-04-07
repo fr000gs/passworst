@@ -1,0 +1,66 @@
+---
+layout: page
+title: "Passworst: the Worst Password Manager"
+subtitle: Forget to <button><h2>Forgot Password</h2></button>
+description: A password manager which requires no files
+toc: true
+comments: true
+---
+<h2 id="download">Download</h2>
+<h3>
+<ol>
+<li><a href="https://github.com/fr000gs/passworst-android/releases/latest/download/app-release.apk">Android App</a></li>
+<li><a href="https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe">Download for Windows x64</a></li>
+<li><a href="https://github.com/fr000gs/passworst/releases/latest/download/passrust">Standalone binary for Linux</a></li>
+<li><sup><sub><a href="https://github.com/fr000gs/passworst/releases">All releases</a></sub></sup></li>
+</ol>
+</h3>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Enter your username in top field (along with the website name)</li>
+<li>Enter your master password below</li>
+<li>Copy the hash generated into the password</li>
+</ol>
+<h2 id="how-does-it-work-">How does it work?</h2>
+<ol>
+<li>Each combination of username, website and master password is hashed to make a UNIQUE password</li>
+<li>Even if the password is leaked the person who gets the password cannot get your master password</li>
+</ol>
+<h2 id="advantages">Advantages</h2>
+<ol>
+<li>You no longer have to click the &quot;forgot password&quot; button</li>
+<li>You don&#39;t have to carry around a file unlike other password managers</li>
+</ol>
+<h4 id="copyright-c-2023-fr000gs">Copyright (C) 2023 fr000gs</h4>
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+<p>You should have received a copy of the <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
+along with this program.  If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+<h4 id="credits-">Credits:</h4>
+<ol>
+<li><a href="www.vim.org">Vim</a> on <a href="archlinux.org">Arch</a> with <a href="https://github.com/ycm-core/YouCompleteMe">YCM</a></li>
+</ol>
+
+{% if page.comments %}
+<div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://fr000gs-github-io-passworst.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% endif %}
