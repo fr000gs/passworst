@@ -5,9 +5,22 @@ show_downloads: false
 title: PassWorst
 name: fr000gs
 email: f47fr0g@gmail.com
-description: Passworst: the Worst Password Manager
+description: "Passworst: the Worst Password Manager"
 
-display_footer: inital  #change this to 'none' if you want to hide the footer copyright text
+github: "https://github.com/fr000gs/passworst"
+
+baseurl: "/passworst" # If your site is located at /blog or /home, change it here, otherwise leave it empty
+url: "https://fr000gs.github.io/passworst" # The URL of your site
+
+# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
+#tag_manager_id: # This looks something like GTM-XXXXXXX
+#google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
+
+cookie_accept_message: Thanks! # The pop-up dialog that appears after accepting the cookie notice.
+
+syntax_highlighting: true # include the css for syntax highlighting
+
+display_footer: none  #change this to 'none' if you want to hide the footer copyright text
 
 defaults:
   -
