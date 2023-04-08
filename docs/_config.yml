@@ -1,14 +1,7 @@
-remote_theme: jekyll-material-theme/jekyll-material-theme
+remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
 - jekyll-remote-theme
 show_downloads: false
-title: PassWorst
-name: fr000gs
-email: f47fr0g@gmail.com
-description: Passworst: the Worst Password Manager
-
-display_footer: inital  #change this to 'none' if you want to hide the footer copyright text
-
 defaults:
   -
     scope:
