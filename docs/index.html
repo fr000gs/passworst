@@ -1,87 +1,102 @@
 ---
 layout: page
 title: "Passworst: the Worst Password Manager"
-subtitle: Forget to <md-tonal-button title="Forgot Password">Forgot Password
+subtitle: Forget to <md-tonal-button title="Forgot Password"></md-tonal-button><noscript>Forgot Password</noscript>
 description: A password manager which requires no files
 toc: true
 comments: true
 ---
-<head>
-	<!--<script type="module" src="./index.js"></script>-->
-	<link rel="stylesheet" type="text/css" href="dist/index.css">
-	<meta charset="utf-8">
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--<script type="module" src="./index.js"></script>-->
+		<link rel="stylesheet" type="text/css" href="dist/index.css">
+		<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="/index.css">
 
-	<title>PassWorst</title>
-</head>
-<body>
-	<script src="./bundle.js"></script>
-	<noscript>Enable Javascript</noscript>
-	<h2 id="download">Download</h2>
+		<title>PassWorst</title>
+	</head>
+	<body>
+		<script src="./bundle.js"></script>
+		<h2 id="download">Download</h2>
 
-	<a href="https://github.com/fr000gs/passworst-android/releases/latest/download/passworst.apk">
-		<md-filled-button label="Android App" href="aaa">Android App
-	</md-filled-button></a>
-	<a href="https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe">
-		<md-outlined-button label="Download for Windows x64">Download for Windows x64
-	</md-outlined-button></a>
-	<a href="https://github.com/fr000gs/passworst/releases/latest/download/passrust">
-		<md-filled-button label="GNU/Linux x64 (Standalone)">GNU/Linux x64 (Standalone)
-	</md-filled-button></a>
-	<a href="https://github.com/fr000gs/passworst/releases">
-		<md-tonal-button label="All releases">
-	</md-tonal-button></a>
+		<a href="https://github.com/fr000gs/passworst-android/releases/latest/download/passworst.apk">
+			<md-filled-button label="Android App"><noscript>Android App</noscript>
+		</md-filled-button></a>
+		<a href="https://github.com/fr000gs/passworst/releases/latest/download/passrust.exe">
+			<md-outlined-button label="Download for Windows x64"><noscript>Download for Windows x64</noscript>
+		</md-outlined-button></a>
+		<a href="https://github.com/fr000gs/passworst/releases/latest/download/passrust">
+			<md-filled-button label="GNU/Linux x64 (Standalone)"><noscript>GNU/Linux x64 (Standalone)</noscript>
+		</md-filled-button></a>
+		<a href="https://github.com/fr000gs/passworst/releases">
+			<md-tonal-button label="All releases"><noscript>All releases</noscript>
+		</md-tonal-button></a>
 
-	<h2 id="usage">Usage</h2>
-	<ol>
-		<li>Enter your username in top field (along with the website name)</li>
-		<li>Enter your master password below</li>
-		<li>Copy the hash generated into the password field. Next time the same password will be generated</li>
-	</ol>
-	<h2 id="how-does-it-work-">How does it work?</h2>
-	<ol>
-		<li>Each combination of username, website and master password is hashed to make a UNIQUE password</li>
-		<li>Even if the password is leaked the person who gets the password cannot get your master password</li>
-	</ol>
-	<h2 id="advantages">Advantages</h2>
-	<ol>
-		<li>You no longer have to click <md-filled-button label="Forgot Password?"></md-filled-button></li>
-		<li>You don&#39;t have to carry around a file unlike other password managers</li>
-	</ol>
-	<h2 id="data">No data is collected from the application.</h2>
-	<h4 id="copyright-c-2023-fr000gs">Copyright (C) 2023 fr000gs</h4>
-	<p>This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.</p>
-	<p>You should have received a copy of the <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
-	along with this program.  If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
-	<h4 id="credits-">Credits:</h4>
-	<ol>
-		<li><a href="www.vim.org">Vim</a> on <a href="archlinux.org">Arch</a> with <a href="https://github.com/ycm-core/YouCompleteMe">YCM</a></li>
-	</ol>
-</body>
+		<h2 id="usage">Usage</h2>
+		<ol>
+			<li>Enter your username in top field (along with the website name)</li>
+			<li>Enter your master password below</li>
+			<li>Copy the hash generated into the password field. Next time the same password will be generated</li>
+		</ol>
+		<h2 id="how-does-it-work-">How does it work?</h2>
+		<ol>
+			<li>Each combination of username, website and master password is hashed to make a UNIQUE password</li>
+			<li>Even if the password is leaked the person who gets the password cannot get your master password</li>
+		</ol>
+		<h2 id="advantages">Advantages</h2>
+		<ol>
+			<li>You no longer have to click <md-filled-button label="Forgot Password?"></md-filled-button></li>
+			<li>You don&#39;t have to carry around a file unlike other password managers</li>
+		</ol>
+		<h2 id="data">No data is collected from the application.</h2>
+		<p>
+		Windows Defender Smartscreen might show that it "protected your pc", but this happens because haven't signed my Windows application with a code signing certificate. A code signing certificate is of two types:
+		</p><ol>
+			<li>OV certificates: These are the waste of money that don't even disable the warnings.</li>
+			<li>EV certificates: A waste of money ($755) per YEAR issued only to organisations (to enable loss of budget maybe).</li>
+		</ol>
+		You can also check the code on Github (if paranoid):
+		<a href="https://github.com/fr000gs/passworst-android" target="_blank">
+			<md-filled-button label="Android app"><noscript>Android app</noscript>
+		</md-filled-button></a>
+		<a href="https://github.com/fr000gs/passworst" target="_blank">
+			<md-outlined-button label="Desktop app"><noscript>Desktop app</noscript>
+		</md-outlined-button></a>
+		<p></p>
+		<h4 id="copyright-c-2023-fr000gs">Copyright (C) 2023 fr000gs</h4>
+		<p>This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.</p>
+		<p>You should have received a copy of the <a href="https://www.gnu.org/licenses/gpl.html">GNU General Public License</a>
+		along with this program.  If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+		<h4 id="credits-">Credits:</h4>
+		<ol>
+			<li><a href="www.vim.org">Vim</a> on <a href="archlinux.org">Arch</a> with <a href="https://github.com/ycm-core/YouCompleteMe">YCM</a></li>
+		</ol>
+	</body>
 
-{% if page.comments %}
-<div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
+	{% if page.comments %}
+	<div id="disqus_thread"></div>
+	<script>
+		/**
+		*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+		 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+		/*
     var disqus_config = function () {
     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://fr000gs-github-io-passworst.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
-</md-tonal-button>
+		 */
+		(function() { // DON'T EDIT BELOW THIS LINE
+			var d = document, s = d.createElement('script');
+			s.src = 'https://fr000gs-github-io-passworst.disqus.com/embed.js';
+			s.setAttribute('data-timestamp', +new Date());
+			(d.head || d.body).appendChild(s);
+		})();
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	{% endif %}
+</html>
